@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Biomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌎 Missão Biomas</h1>
+        <p>Um desafio de Ciências para o 6º ano!</p>
+    </header>
+
+    <main>
+
+        <section id="tela-inicial" class="tela">
+            <div class="card">
+                <div class="emoji">🌱</div>
+                <h2>Pronto para o desafio?</h2>
+                <p>Responda às perguntas sobre natureza, animais e meio ambiente.</p>
+                <button id="btn-iniciar">🚀 Começar</button>
+            </div>
+        </section>
+
+        <section id="tela-jogo" class="tela escondido">
+
+            <div class="informacoes">
+                <span>⭐ Pontos: <strong id="pontos">0</strong></span>
+                <span>❤️ Vidas: <strong id="vidas">3</strong></span>
+            </div>
+
+            <div class="barra-container">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <div class="card">
+                <p id="numero-pergunta">Pergunta 1 de 10</p>
+
+                <h2 id="pergunta"></h2>
+
+                <div id="opcoes" class="opcoes"></div>
+
+                <button id="btn-proxima" class="escondido">
+                    Próxima ➡️
+                </button>
+            </div>
+
+        </section>
+
+        <section id="tela-final" class="tela escondido">
+            <div class="card resultado">
+                <div class="emoji">🏆</div>
+
+                <h2>Fim do desafio!</h2>
+
+                <p>Você conseguiu:</p>
+
+                <div class="resultado-pontos">
+                    <span id="pontuacao-final">0</span>
+                    <small>pontos</small>
+                </div>
+
+                <p id="mensagem-final"></p>
+
+                <button id="btn-reiniciar">
+                    🔄 Jogar novamente
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌿 Missão Biomas • Projeto de Ciências • 6º ano</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
